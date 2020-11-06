@@ -16,7 +16,15 @@ class NewsFeedAppUITests: UITestBase {
     }
 
     func testExample() {
-
         
+        HomeScreen()
+            .tapOnTabBar()
+            .abc()
+    }
+    
+    func test_tapOnFirstTeaser() {
+        
+        HomeScreen()
+            .tapOnTeaser(index: 0)
     }
 }

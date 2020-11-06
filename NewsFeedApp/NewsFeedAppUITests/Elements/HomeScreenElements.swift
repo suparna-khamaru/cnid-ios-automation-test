@@ -12,10 +12,14 @@ class HomeScreenElements {
     var search: XCUIElement
     var bookmark: XCUIElement
     var dailyFeed: XCUIElement
+    var teaser: XCUIElementQuery
     
     var tabBar = AccessibilityIdentifiers.TabBar.self
+    
 
     required init(_ app: XCUIApplication) {
+        
+        teaser = app.images
         
         search = app
             .tabBars[tabBar.tabBar]
